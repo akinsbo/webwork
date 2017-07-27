@@ -1,5 +1,6 @@
 package com.laveolu.webwork;
 
+import com.laveolu.webwork.controller.VideoController;
 import static org.assertj.core.api.Assertions.assertThat;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -13,10 +14,11 @@ import static org.springframework.web.servlet.mvc.method.annotation.MvcUriCompon
 public class WebworkApplicationTests {
         
     @Autowired
+    VideoController videocontroller;
     
 	@Test
 	public void contextLoads() throws Exception {
-            assertThat(controller).isNotNull;
+            assertThat(videocontroller).isNotNull();
 	}
 
 }

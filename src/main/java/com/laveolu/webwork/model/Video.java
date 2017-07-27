@@ -24,7 +24,7 @@ public class Video {
     private String startFrom;
     private String instruction;
     private String description;
-    private Show show;
+ //private Show show;
 
     public Integer getId() {
         return id;
@@ -74,14 +74,11 @@ public class Video {
         this.description = description;
     }
 
-    public Show getShow() {
-        return show;
-    }
-
-    public void setShow(Show show) {
-        this.show = show;
-    }
-    
-    
-    
+    // public Show getShow() {
+    //     return show;
+    // }
+    //
+    // public void setShow(Show show) {
+    //     this.show = show;
+    // }
 }

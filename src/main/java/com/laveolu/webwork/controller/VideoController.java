@@ -22,10 +22,11 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 @RequestMapping(path="/videos")
 //@RequestMapping(method=GET, path="/videos")
-public class MainController {
+public class VideoController {
     @Autowired//This means to get the bean called videRepository
     private VideoRepository videoRepository;
     
+    //e.g http://localhost:9091/videos/add?show=blessed&duration=50s&instruction=play_weekly&description=note_this_video
     @GetMapping(path="/add")//Map ONLY GET requests
     public @ResponseBody String addNewVideo(@RequestParam String title, 
             @RequestParam String show,

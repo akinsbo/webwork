@@ -1,0 +1,12 @@
+package com.laveolu.webwork;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class WebworkApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(WebworkApplication.class, args);
+	}
+}
